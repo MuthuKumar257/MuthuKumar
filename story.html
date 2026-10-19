@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (() => {
+        const parameter = new URLSearchParams(window.location.search).get('clawpilotTheme')
+        let saved
+        try { saved = localStorage.getItem('portfolio-theme') } catch {}
+        const preference = parameter || saved
+        const theme = ['light', 'dark'].includes(preference)
+          ? preference
+          : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', theme)
+      })()
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hi, I'm Muthu Kumar M., a Full Stack Developer passionate about building practical software products, AI-powered applications, and modern web experiences." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#f5f5f5" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%2315191c'/%3E%3Ctext x='16' y='24' text-anchor='middle' font-family='sans-serif' font-size='23' fill='%23f0f2ef'%3EM%3C/text%3E%3C/svg%3E" />
+    <title>Muthu Kumar M. | Full Stack Developer</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#exhibition-view">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#exhibition" aria-label="mk. Muthu Kumar M., home">mk<span class="brand-dot">.</span> <span class="wordmark-name">Muthu Kumar M.</span></a>
+      <nav aria-label="Portfolio"><a href="#work" data-nav="work">Work</a><a href="#about" data-nav="about">About</a><a href="#resume" data-nav="resume">Resume</a></nav>
+      <a class="icon-button contact-control" href="mailto:muthukumar82508@gmail.com" aria-label="Email Muthu Kumar" title="Email Muthu Kumar"><i data-lucide="mail" aria-hidden="true"></i></a>
+      <button class="icon-button theme-control" type="button" data-action="theme" aria-label="Switch to evening theme" title="Switch to evening theme"><i data-lucide="moon" aria-hidden="true"></i></button>
+    </header>
+
+    <main id="exhibition-view" class="portfolio-story" tabindex="-1">
+      <div class="opening-sequence">
+      <section class="story-hero" aria-labelledby="home-title">
+        <div class="hero-photo"><img id="portrait-source" src="/src/assets/hardik-portrait.jpg" alt="Muthu Kumar M. seated on a green bench" width="1122" height="1402" fetchpriority="high" decoding="async" /></div>
+        <div class="hero-glimpse hero-glimpse-camera" aria-hidden="true"><img data-photo-from="portrait-source" alt="" width="1122" height="1402" decoding="async" /></div>
+        <div class="hero-glimpse hero-glimpse-candid" aria-hidden="true"><img id="candid-source" src="/src/assets/hardik-candid.jpg" alt="" width="1024" height="1024" decoding="async" /></div>
+        <img class="hero-cutout" src="/src/assets/hardik-cutout.webp" alt="Muthu Kumar M." width={512} height={1400} decoding="async" />
+        <div class="hero-content"><p class="hero-role">Full Stack Developer.<br /> Dr. N.G.P. iTech 2028.</p><h1 id="home-title"><span class="hero-firstname">Muthu</span> <span class="hero-lastname">Kumar M.<span class="hero-stop">.</span></span></h1><p class="hero-lead">Passionate about building practical software products, AI-powered applications, and modern web experiences.</p><div class="hero-actions"><a href="#selected-work">View work<i data-lucide="arrow-down" aria-hidden="true"></i></a><a href="/Muthu_Kumar_M_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume<i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></div>
+      </section>
+      <section id="my-story" class="origin-story" aria-labelledby="origin-title">
+        <header class="origin-heading"><p class="section-context">Engineering & Craft</p><h2 id="origin-title" class="section-title">From practical code<br />to impactful products.</h2></header>
+        <div class="origin-journey"><div class="origin-visual" aria-hidden="true"><div class="window-study"><span class="window-pane"><img data-photo-from="portrait-source" alt="" width="1122" height="1402" loading="lazy" decoding="async" /></span><span class="window-pane"><img data-photo-from="portrait-source" alt="" width="1122" height="1402" loading="lazy" decoding="async" /></span><span class="window-pane"><img data-photo-from="portrait-source" alt="" width="1122" height="1402" loading="lazy" decoding="async" /></span><span class="window-pane"><img data-photo-from="portrait-source" alt="" width="1122" height="1402" loading="lazy" decoding="async" /></span></div></div><div class="origin-chapters"><article class="origin-chapter"><p class="chapter-label">Foundation</p><h3>Building with purpose.</h3><p>Starting with core algorithms and software development in C, Java, and Python, I developed a passion for solving real-world challenges through clean, maintainable engineering.</p></article><article class="origin-chapter origin-now"><p class="chapter-label">Now</p><h3>Full stack & AI applications.</h3><p>Today, I build production-grade web systems, high-performance backends with Node.js, Express.js, FastAPI, and Django, and AI middleware like TokTrim to optimize prompt token costs.</p><a class="text-link" href="#selected-work">Explore featured projects<i data-lucide="arrow-up-right" aria-hidden="true"></i></a></article></div></div>
+      </section>
+      </div>
+      <div class="lens-sequence">
+      <section id="my-approach" class="shared-lens" aria-labelledby="approach-title">
+        <figure class="lens-photo"><img src="/src/assets/hardik-camera.jpg" alt="Muthu Kumar M." width="934" height="935" loading="lazy" decoding="async" /></figure>
+        <div class="lens-copy"><h2 id="approach-title" class="section-title">Software is<br /><span>problem solving.</span></h2><p class="lens-lead">Practical applications, clean code, and technology.</p><p>I turn complex challenges into reliable web experiences and optimized AI systems.</p><p>From high-performance backends to intuitive interfaces, every line of code serves a purpose.</p><p class="practice-values">Backend engineering. Prompt optimization.<br />Production quality.</p></div>
+      </section>
+      </div>
+      <section id="selected-work" class="selected-work" aria-labelledby="selected-work-title">
+        <header class="work-heading"><h2 id="selected-work-title" class="section-title">Ideas become<br /><span>experiences.</span></h2><p>Selected work across platforms, AI, identity, and spatial interaction.</p><a class="text-link" href="#work">All projects<i data-lucide="arrow-up-right" aria-hidden="true"></i></a></header>
+        <div class="work-sequence"><div id="work-chapters" class="work-chapters"></div><figure class="work-visual"><div id="exhibit-stage" class="exhibit-stage"><img id="exhibit-fallback" class="exhibit-fallback" src="/src/assets/cover-store.jpg" alt="" width="1440" height="960" /></div><figcaption><span id="study-label">TokTrim AI</span><span>Prompt optimization middleware</span></figcaption></figure></div>
+      </section>
+      <section id="beyond-work" class="beyond-work" aria-labelledby="beyond-title">
+        <div class="beyond-copy"><p class="section-context">Away from the screen</p><h2 id="beyond-title" class="section-title">Still curious.</h2><p class="beyond-lead">Not everything needs to turn into a project.</p><p>Some things are just worth exploring and dedicating genuine curiosity toward.</p><dl class="interest-list"><div><dt>Backend & Databases</dt><dd>Scalable REST APIs and server architectures with Node.js, Express.js, Django, and SQL.</dd></div><div><dt>AI & LLMs</dt><dd>Prompt optimization, token compression, and practical middleware.</dd></div><div><dt>Full Stack Web</dt><dd>Modern web applications with React, React Native, and component architecture.</dd></div><div><dt>Community & E-Cell</dt><dd>Organizing hackathons, technical events, and startup initiatives.</dd></div></dl><a class="text-link" href="#about">More about me<i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
+        <figure class="candid-photo"><img data-photo-from="candid-source" alt="Muthu Kumar M." width="1024" height="1024" loading="lazy" decoding="async" /></figure>
+      </section>
+      <section class="story-contact-band" aria-labelledby="contact-title"><h2 id="contact-title">Let's find a<br />shared perspective.</h2><a href="mailto:muthukumar82508@gmail.com">muthukumar82508@gmail.com<i data-lucide="arrow-up-right" aria-hidden="true"></i></a></section>
+    </main>
+    <main id="reading-view" class="reading-view" hidden>
+      <div class="reading-toolbar"><a id="back-exhibition" href="#exhibition"><i data-lucide="arrow-left" aria-hidden="true"></i>Back to story</a><div class="reading-actions"><button id="copy-project-link" class="icon-button" type="button" data-action="copy-link" aria-label="Copy page link" title="Copy page link"><i data-lucide="link-2" aria-hidden="true"></i></button><button class="download-button" type="button" data-action="download" aria-label="Download resume PDF" title="Download resume PDF"><i data-lucide="download" aria-hidden="true"></i><span class="download-label">Resume PDF</span></button></div></div>
+      <p class="reader-byline">Muthu Kumar M. / Full Stack Developer</p>
+      <div id="reading-content" tabindex="-1"></div>
+    </main>
+    <footer class="site-footer"><span>Muthu Kumar M. / Full Stack Developer</span><a href="#resume">Resume<i data-lucide="arrow-up-right" aria-hidden="true"></i></a></footer>
+    <div id="action-feedback" class="action-feedback" hidden><p id="action-feedback-text"></p><button class="icon-button" type="button" data-action="dismiss-feedback" aria-label="Dismiss message" title="Dismiss message"><i data-lucide="x" aria-hidden="true"></i></button></div>
+    <p id="exhibition-status" class="sr-only" role="status" aria-live="polite"></p>
+    <noscript><p>Muthu Kumar M., Full Stack Developer. Contact <a href="mailto:muthukumar82508@gmail.com">muthukumar82508@gmail.com</a>. JavaScript is required for the project readers.</p></noscript>
+    <script type="module" src="/src/exhibition.js"></script>
+
+  </body>
+</html>
