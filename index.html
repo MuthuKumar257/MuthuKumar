@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta name="google-site-verification" content="lnLn2X3VwYIREslt-6mpTVJl5WbeSM29_bih2T51B7Y" />
     <meta charset="UTF-8" />
     <script>
       (() => {
@@ -12,8 +13,6 @@
           ? preference
           : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
         document.documentElement.setAttribute('data-theme', theme)
-        // The app restores scroll itself; the home page opens on the cover's viewfinder, so its black and the clear header
-        // are painted before the app loads (the cover clears data-boot once it is up).
         history.scrollRestoration = 'manual'
         if (!/^#(?:work|about|resume|exhibition|my-story|my-approach|selected-work|experience|beyond-work|contact)(?:\/|$)/.test(location.hash)) {
           document.documentElement.dataset.boot = ''
@@ -36,6 +35,5 @@
     <div id="root"></div>
     <noscript><p>Muthu Kumar M., Full Stack Developer. Contact <a href="mailto:muthukumar82508@gmail.com">muthukumar82508@gmail.com</a>. JavaScript is required for this portfolio.</p></noscript>
     <script type="module" src="/src/app/main.tsx"></script>
-
   </body>
 </html>
