@@ -26,6 +26,7 @@ The React portfolio uses the WebP copies; `story.html` keeps the JPEGs. `hardik-
 
 Active project screens live in `src/assets/projects/` and include real product interfaces for:
 - **TokTrim**: Token pruning, cost optimization metrics, and dashboard screens.
+- **SyncWave**: Music player, Discover search, soundtrack categories, and queue interface screens.
 - **CodeExam**: Admin, faculty, login, and student coding examination interfaces.
 - **CashFlow AI**: Authentication, ledger, and financial analytics dashboard.
 - **Alumnyx**: Mobile interface screens (Connections, Home, Jobs, Login).

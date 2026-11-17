@@ -1,4 +1,5 @@
 export const projectIds = [
+  'syncwave',
   'toktrim',
   'codeexam',
   'cashflow-ai',

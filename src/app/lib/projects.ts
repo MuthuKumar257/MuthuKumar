@@ -1,5 +1,7 @@
 import type { ProjectId } from './routes.js'
 
+import syncWaveApp from '../../assets/projects/SyncWave.png'
+
 import tokenTrim1 from '../../assets/projects/TokenTrim1.png'
 import tokenTrim2 from '../../assets/projects/TokenTrim2.png'
 import tokenTrim3 from '../../assets/projects/TokenTrim3.png'
@@ -152,6 +154,123 @@ export const projects: Project[] = [
     takeaway: {
       line: 'Targeted pre-processing delivers compounding financial and latency gains in AI systems.',
       body: 'Optimizing prompts before inference is often far more cost-effective than simply choosing smaller, less capable base models.',
+    },
+  },
+  {
+    id: 'syncwave',
+    name: 'SyncWave',
+    category: 'Smart Music Player & Streaming',
+    headline: 'Smart cross-platform music player with personalized recommendations and intelligent queue generation.',
+    description: 'A cross-platform music streaming and smart player application built with React Native, Node.js, and Supabase PostgreSQL. It combines personalized recommendation algorithms, dynamic queue generation, language and artist filtering, and unified local and online audio playback.',
+    summary: 'Cross-platform music player featuring personalized recommendations, automatic queue generation, and hybrid online/local playback.',
+    role: 'Full Stack & Mobile Developer',
+    organization: 'Velvin Developers',
+    timeline: '2026',
+    status: 'Live on Web & Android',
+    team: 'Lead Developer',
+    scope: 'React Native cross-platform application (Android & Web), Node.js backend services, Supabase PostgreSQL with RLS, recommendation & queue algorithms',
+    tags: ['React Native', 'Node.js', 'Supabase', 'PostgreSQL', 'Google OAuth', 'REST APIs', 'Queue Generation', 'Audio Streaming'],
+    liveUrl: 'https://syncwave.velvindevelopers.dpdns.org/',
+    metrics: [
+      { value: 'Dynamic Queue', label: 'Deduplicated algorithmic queue generation' },
+      { value: 'Cross-Platform', label: 'Android & Web via React Native' },
+    ],
+    color: '#16161a',
+    ink: '#fde68a',
+    cover: {
+      src: syncWaveApp,
+      alt: 'SyncWave Discover interface with music search, curated themes, and movie soundtrack tracklists',
+      width: 1536,
+      height: 817,
+    },
+    problem: {
+      body: 'Traditional music streaming applications force listeners to constantly search for songs and manually assemble playlists. Standard recommendation algorithms frequently surface repeated songs, disregard selected language preferences, and fail to prioritize user affinity for specific music directors and singers. Furthermore, online streaming services remain disconnected from local music files stored on device storage.',
+      stats: [
+        { value: 'Zero Repetition', label: 'Session-aware queue deduplication' },
+        { value: 'Unified', label: 'Online streaming & local device audio' },
+      ],
+    },
+    insight: 'Harmonizing explicit user preferences (languages, singers, and directors) with implicit listening habits creates an autonomous queue that eliminates manual playlist management.',
+    contrast: [
+      {
+        title: 'Traditional Music Players',
+        items: [
+          'Manual queue management & playlist assembly',
+          'Repeated tracks appearing frequently in playback',
+          'Recommendations ignoring chosen language preferences',
+          'Disconnect between online music and local device audio',
+        ],
+        keep: false,
+      },
+      {
+        title: 'SyncWave Smart Architecture',
+        items: [
+          'Dynamic queue generation based on listening habits',
+          'Smart session-aware deduplication algorithms',
+          'Strict language, singer, and music director prioritization',
+          'Unified hybrid playback for online streams & local files',
+        ],
+        keep: true,
+      },
+    ],
+    decisions: [
+      {
+        title: 'Intelligent queue generation & preference-weighted recommendation engine',
+        body: 'Designed an automated queue-generation workflow that analyzes user-selected languages, favorite music directors, playback completion behavior, and recent history. Candidate songs are filtered to prevent duplicate plays within active sessions while dynamically replenishing the upcoming queue as tracks finish, maintaining consistent language affinity and session continuity across app restarts.',
+        flows: [
+          {
+            label: 'Queue Generation Workflow',
+            steps: ['Retrieve Active Track', 'Read User Preferences', 'Filter History & Duplicates', 'Rank Candidates', 'Synthesize Upcoming Queue'],
+          },
+        ],
+        shots: [
+          {
+            src: syncWaveApp,
+            alt: 'SyncWave Discover interface with music director filters, category tabs, and dynamic tracklists',
+            width: 1536,
+            height: 817,
+            caption: 'SyncWave Discover view featuring theme tags, movie soundtrack exploration, and tracklist queues.',
+          },
+        ],
+      },
+      {
+        title: 'Modular React Native & Node.js client-server architecture with Supabase',
+        body: 'Architected a modular client-server system separating the React Native presentation layer from Node.js backend services and Supabase PostgreSQL. Enforced Row Level Security (RLS) for user preference profiles, listening history, custom playlists, and offline download metadata. Implemented Google OAuth for seamless authentication alongside hybrid playback capable of indexing and playing local device audio alongside online streaming sources.',
+        flows: [
+          {
+            label: 'End-to-End Architecture Flow',
+            steps: ['React Native UI', 'Google OAuth & API Layer', 'Node.js Backend', 'Supabase PostgreSQL & RLS', 'Recommendation Engine', 'Audio Player & Queue'],
+          },
+        ],
+        shots: [
+          {
+            src: syncWaveApp,
+            alt: 'SyncWave dark mode player interface with navigation sidebar and search',
+            width: 1536,
+            height: 817,
+            caption: 'Unified music player workspace supporting online streaming, local audio engines, and playlist management.',
+          },
+        ],
+      },
+    ],
+    result: {
+      body: 'Successfully built and deployed SyncWave as an accessible, high-performance music application at syncwave.velvindevelopers.dpdns.org. The application delivers seamless music discovery across genres and languages, dynamic queue updates, background playback support, and local storage integration.',
+      metrics: [
+        { value: 'Android & Web', label: 'Single codebase cross-platform delivery' },
+        { value: 'Live Demo', label: 'Production web deployment' },
+      ],
+      shots: [
+        {
+          src: syncWaveApp,
+          alt: 'SyncWave live web deployment displaying music discovery and player queue',
+          width: 1536,
+          height: 817,
+        },
+      ],
+    },
+    takeaway: {
+      line: 'Combining explicit taste profiles with automated queue synthesis turns listening into effortless discovery.',
+      body: 'By eliminating repetitive tracks and bridging online streaming with local device storage, music players can deliver a cohesive, uninterrupted audio experience tailored to each listener.',
     },
   },
   {

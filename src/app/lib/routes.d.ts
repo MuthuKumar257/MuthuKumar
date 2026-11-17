@@ -1,4 +1,5 @@
 export type ProjectId =
+  | 'syncwave'
   | 'toktrim'
   | 'codeexam'
   | 'cashflow-ai'

@@ -66,7 +66,7 @@ export const skills = [
   { group: 'Languages', items: ['C', 'Java', 'Python', 'Rust'] },
   { group: 'Frontend', items: ['React', 'React Native', 'MEAN stack'] },
   { group: 'Backend', items: ['Node.js', 'Express.js', 'Django', 'FastAPI', 'REST APIs'] },
-  { group: 'Databases', items: ['SQL', 'MySQL'] },
+  { group: 'Databases', items: ['SQL', 'MySQL', 'PostgreSQL', 'Supabase'] },
   { group: 'Tools & DevOps', items: ['Linux', 'Git', 'GitHub', 'Vercel'] },
   { group: 'Cloud', items: ['AWS'] },
   { group: 'Additional', items: ['Prompt Engineering'] },
@@ -109,7 +109,7 @@ export const about = {
     },
     {
       heading: 'Building Practical Software Products',
-      body: 'From online coding exam platforms with proctoring safeguards to full-stack restaurant management systems with real-time rupee pricing and cricket boundary detection sensors, I enjoy turning concrete problems into working software products.',
+      body: 'From smart music streaming with personalized recommendation algorithms (SyncWave) and online coding exam platforms with proctoring safeguards to full-stack restaurant management systems and cricket boundary detection sensors, I enjoy turning concrete problems into working software products.',
     },
     {
       heading: 'Technical Leadership & Collaboration',
@@ -155,6 +155,8 @@ export const toolkit = [
   'MEAN Stack',
   'SQL',
   'MySQL',
+  'PostgreSQL',
+  'Supabase',
   'REST APIs',
   'Linux',
   'AWS',

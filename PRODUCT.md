@@ -36,6 +36,7 @@ Cinematic, editorial type-and-photo portfolio:
 3. **Scroll Transitions**: Scrolling moves the headline outwards and transitions smoothly into the core engineering philosophy: "Engineering practical software. Driven by clean code & AI."
 4. **Selected Work (Aperture & Stack)**: An aperture opens like a camera shutter onto the featured projects:
    - **TokTrim**: AI prompt cost optimization reducing token consumption by up to 50% with low-latency FastAPI middleware.
+   - **SyncWave**: Smart cross-platform music streaming and player application with personalized recommendation algorithms, dynamic queue generation, and local playback.
    - **CodeExam**: Online coding examination platform with secure proctoring safeguards and compiler integration.
    - **CashFlow AI**: AI-assisted financial ledger and analytics system.
    - **Alumnyx**: Cross-platform alumni networking mobile application.

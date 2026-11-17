@@ -222,7 +222,7 @@ export function SelectedWork() {
               <br />
               work<span aria-hidden="true" className="work-dot ml-[0.04em] inline-block size-[0.16em] rounded-full align-baseline" style={{ backgroundColor: featuredProjects[0].color }} />
             </h2>
-            <p className="mt-8 max-w-md text-lg text-muted-foreground">Selected software projects, from AI prompt optimization to full-stack platforms.</p>
+            <p className="mt-8 max-w-md text-lg text-muted-foreground">Selected software projects, from AI prompt optimization and smart music streaming to full-stack platforms.</p>
           </div>
         </div>
         {featuredProjects.map((project, index) => (

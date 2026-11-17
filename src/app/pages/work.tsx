@@ -99,7 +99,7 @@ export function WorkPage() {
       <section className="px-5 pb-[clamp(3rem,8vh,6rem)] pt-[calc(var(--header-height)+clamp(3rem,12vh,8rem))] md:px-10">
         <PageTitle className="text-[clamp(4.5rem,18vw,19rem)] leading-[0.8]">Work</PageTitle>
         <p className="mt-10 max-w-[42ch] text-[clamp(1.2rem,1.7vw,1.6rem)] leading-snug">
-          Featured projects across AI prompt optimization middleware, technical assessment platforms, financial intelligence, mobile networking, restaurant management, and IoT embedded systems.
+          Featured projects across AI prompt optimization, smart music streaming, technical assessment platforms, financial intelligence, mobile networking, restaurant management, and IoT embedded systems.
         </p>
       </section>
 
