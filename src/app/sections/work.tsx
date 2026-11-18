@@ -54,14 +54,14 @@ function Chapter({ project, index }: { project: Project; index: number }) {
       aria-labelledby={`chapter-${project.id}`}
       data-index={index}
     >
-      <div className="relative flex min-h-[100svh] flex-col justify-between px-5 pb-6 pt-[calc(var(--header-height)+clamp(1rem,2.2vh,2.5rem))] md:px-10 md:pb-8">
+      <div className="relative flex min-h-[100svh] flex-col px-5 pb-8 pt-[calc(var(--header-height)+2rem)] md:px-10 md:pb-10">
         <div className="relative z-10 flex flex-1 flex-col md:w-[44%]">
-          <h3 id={`chapter-${project.id}`} className="chapter-title display text-[clamp(2.75rem,5.8vw,8rem)] leading-[0.9]">{project.name}</h3>
-          <p className="mt-4 max-w-[28ch] text-[clamp(1.2rem,1.8vw,1.95rem)] font-semibold leading-tight tracking-[-0.02em]">{project.headline}</p>
-          <p className="mt-3.5 max-w-[44ch] text-[16px] leading-relaxed md:text-[17px]">{project.description}</p>
+          <h3 id={`chapter-${project.id}`} className="chapter-title display text-[clamp(3rem,7vw,8.5rem)]">{project.name}</h3>
+          <p className="mt-5 max-w-[28ch] text-[clamp(1.35rem,2.1vw,2.1rem)] font-semibold leading-tight tracking-[-0.02em]">{project.headline}</p>
+          <p className="mt-4 max-w-[44ch] text-[17px] leading-relaxed">{project.description}</p>
 
           {project.tags && (
-            <ul className="mt-4 flex flex-wrap gap-2" aria-label={`${project.name} technologies`}>
+            <ul className="mt-5 flex flex-wrap gap-2" aria-label={`${project.name} technologies`}>
               {project.tags.map((tag) => (
                 <li key={tag} className="rounded-full border border-current/30 px-3 py-1 text-[13px] font-medium opacity-90">
                   {tag}
@@ -74,10 +74,10 @@ function Chapter({ project, index }: { project: Project; index: number }) {
             <img src={project.cover.src} alt={project.cover.alt} width={project.cover.width} height={project.cover.height} loading="lazy" decoding="async" className="w-full rounded-lg shadow-[0_20px_40px_-20px_rgb(0_0_0/0.5)]" />
           </figure>
 
-          <dl className="mt-6 flex flex-wrap gap-x-10 gap-y-4 md:mt-auto md:pt-6">
+          <dl className="mt-8 flex flex-wrap gap-x-12 gap-y-6 md:mt-auto md:pt-8">
             {project.metrics.slice(0, 2).map((metric) => <ChapterMetric key={metric.label} metric={metric} />)}
           </dl>
-          <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
+          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
             <div className="flex flex-wrap gap-3">
               <Link
                 to={`#work/${project.id}`}
@@ -104,7 +104,7 @@ function Chapter({ project, index }: { project: Project; index: number }) {
 
         </div>
 
-        <figure aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 hidden w-[52%] items-center justify-center pb-8 pr-10 pt-[var(--header-height)] md:flex">
+        <figure aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 hidden w-[52%] items-center justify-center pr-10 pt-[var(--header-height)] md:flex">
           <img
             src={project.cover.src}
             alt=""

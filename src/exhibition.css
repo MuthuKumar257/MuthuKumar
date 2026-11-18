@@ -20,8 +20,6 @@
   color: var(--cp-ink); background: var(--cp-gallery); font-synthesis: none; -webkit-font-smoothing: antialiased;
 }
 html, body {
-  overflow-x: hidden;
-  max-width: 100vw;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
