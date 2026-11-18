@@ -290,7 +290,7 @@ function CaseStudyPage({ project, study, filmLink }: { project: Project; study: 
               <p className="rounded-full border border-current px-2.5 py-0.5 text-[13px] font-semibold">Short version</p>
             </div>
             <PageTitle className="mt-4 text-[clamp(2.75rem,5.4vw,6rem)] leading-[0.88]">{project.name}</PageTitle>
-            <p className="mt-5 max-w-[22ch] text-[clamp(1.35rem,2.1vw,2.1rem)] font-semibold leading-tight tracking-[-0.02em]">{project.headline}</p>
+            <p className="mt-5 max-w-[28ch] text-[clamp(1.35rem,2.1vw,2.1rem)] font-semibold leading-tight tracking-[-0.02em]">{project.headline}</p>
             <Byline project={project} />
             {project.liveUrl && (
               <div className="mt-6 flex flex-wrap gap-3">
@@ -507,7 +507,7 @@ function ProjectGate({ project, onUnlock }: { project: Project; onUnlock: () => 
               <NdaPill />
             </div>
             <PageTitle className="mt-4 text-[clamp(2.75rem,5.4vw,6rem)] leading-[0.88]">{project.name}</PageTitle>
-            <p className="mt-5 max-w-[22ch] text-[clamp(1.35rem,2.1vw,2.1rem)] font-semibold leading-tight tracking-[-0.02em]">{project.headline}</p>
+            <p className="mt-5 max-w-[28ch] text-[clamp(1.35rem,2.1vw,2.1rem)] font-semibold leading-tight tracking-[-0.02em]">{project.headline}</p>
             <Byline project={project} />
             <p className="mt-6 max-w-[44ch] text-[17px] leading-relaxed">{project.description}</p>
           </div>
